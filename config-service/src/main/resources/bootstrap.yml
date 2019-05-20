@@ -8,5 +8,5 @@ spring:
           uri: https://github.com/sydul-fahim-pantha/config-server-prop  
           search-paths: licensingservice
           username: fahim.pantha@gmail.com
-          password: Github@123#
+          password: Github123456
      
