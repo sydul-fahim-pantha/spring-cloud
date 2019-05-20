@@ -3,13 +3,4 @@ server:
 logging:
   level:
     web: TRACE 
-spring:
-  profiles:
-    active: native
-  cloud:
-    config:
-      server:
-        native:
-          search-locations: file://${user.home}/work/git_personal_sydul_fahim_pantha/config-server-prop/licensingservice
-            
      

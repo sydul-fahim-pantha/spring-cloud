@@ -5,6 +5,6 @@ spring:
   application:
     name: licensingservice      
   profiles:
-    active: prod
+    active: dev
   
             
