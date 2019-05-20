@@ -1,0 +1,10 @@
+spring:
+  cloud:
+    config:
+      uri: http://localhost:8889
+  application:
+    name: licensingservice      
+  profiles:
+    active: prod
+  
+            
