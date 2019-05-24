@@ -23,9 +23,7 @@ dependencyManagement {
 }
 
 dependencies {
-	implementation "org.glassfish.jaxb:jaxb-runtime"
-    implementation 'org.springframework.cloud:spring-cloud-starter-netflix-eureka-server'
+	implementation 'org.springframework.cloud:spring-cloud-starter-netflix-eureka-client'
+	implementation 'org.springframework.boot:spring-boot-starter-web'
 	testImplementation 'org.springframework.boot:spring-boot-starter-test'
 }
-
-

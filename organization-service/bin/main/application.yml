@@ -1,0 +1,20 @@
+server:
+  port: 8887
+spring:
+  profiles:
+    active: default
+  application:
+    name: organizationservice
+#eureka:
+#  instance:
+#    prefer-ip-address: true
+#  client:
+#    register-with-eureka: true
+#    fetch-registry: true
+#    service-url: 
+#      defaultZone: http://localhost:8890/eureka/    
+logging:
+  level:
+    web: TRACE       
+  
+

@@ -6,11 +6,10 @@ plugins {
 apply plugin: 'io.spring.dependency-management'
 
 group = 'org.sfp'
-version = '0.0.1-SNAPSHOT'
-sourceCompatibility = '1.8'
+version = 'v1'
 
 repositories {
-	mavenCentral()
+	jcenter()
 }
 
 ext {
@@ -23,13 +22,11 @@ dependencyManagement {
 	}
 }
 
-
 dependencies {
-//  compile 'postgresql:postgresql:9.0-801.jdbc4'
-// 	compile 'org.springframework.boot:spring-boot-starter-data-jpa'
 	compileOnly 'org.projectlombok:lombok:1.16.20'
 	compileOnly 'org.springframework.boot:spring-boot-starter-actuator' 
 	implementation 'org.springframework.boot:spring-boot-starter-web'
 	implementation 'org.springframework.cloud:spring-cloud-config-client'
 	testImplementation 'org.springframework.boot:spring-boot-starter-test'
+	implementation 'org.springframework.cloud:spring-cloud-starter-netflix-eureka-client'
 }

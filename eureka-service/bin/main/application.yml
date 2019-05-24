@@ -1,6 +1,9 @@
 server:
-  port: 8890
+  port: 8761
 spring:
+  freemarker:
+    template-loader-path: classpath:/templates/
+    prefer-file-system-access: false
   application:
     name: servicediscovery 
 logging:
@@ -8,10 +11,16 @@ logging:
     web: TRACE       
   
 eureka:
+  instance:
+    prefer-ip-address: true
+    hostname: localhost
   client:
     register-with-eureka: false
     fetch-registry: false
+    serviceUrl:
+      defaultZone: http://${eureka.instance.hostname}:${server.port}/
   server:
     wait-time-in-ms-when-sync-empty: 5   
+    
       
 
